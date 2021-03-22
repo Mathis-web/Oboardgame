@@ -11,14 +11,14 @@ body {
   background-attachment: fixed;
 }
 
-/*
-  // or you can import your own font
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
-  }
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}
+}
 
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-*/
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}

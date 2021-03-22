@@ -1,9 +1,7 @@
 .Login {
-  // border: 2px solid black;
-  // border-radius: 20px;
   width: auto;
   height: auto;
-  margin: 1em auto;
+  margin: 1em auto 5em;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -12,7 +10,6 @@
     width: 80%;
     margin: auto;
     margin-bottom: 1em;
-    // font: 2em bold sans-serif;
     color: purple;
   }
   &__form {
@@ -63,7 +60,6 @@
     &__link {
       width: 80%;
       margin: auto;
-      // font: 5em normal sans-serif;
       text-decoration: underline;
     }
   }

@@ -72,7 +72,8 @@ function CreateAdvert({
           <h1 className="CreateAdvert__title">Création d'annonce</h1>
           <p className="CreateAdvert__subtitle"> Mieux vous décrirez votre jeu, plus vous aurez de chances de le louer</p>
           <form className="CreateAdvert__form" encType="multipart/form-data" onSubmit={send}>
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Nom de l'annonce"
               name="title"
@@ -83,7 +84,8 @@ function CreateAdvert({
                 setTitle(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Nom du jeu"
               name="gameTitle"
@@ -94,7 +96,8 @@ function CreateAdvert({
                 setGameTitle(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Prix de la location"
               name="locationPrice"
@@ -104,7 +107,8 @@ function CreateAdvert({
                 setLocationPrice(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Durée moyenne d'une partie"
               name="gameAvgDuration"
@@ -114,7 +118,8 @@ function CreateAdvert({
                 setGameAvgDuration(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Nombre de joueurs-min"
               name="gameMinPlayers"
@@ -124,7 +129,8 @@ function CreateAdvert({
                 setGameMinPlayers(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Nombre de joueurs-max"
               name="gameMaxPlayers"
@@ -134,7 +140,8 @@ function CreateAdvert({
                 setGameMaxPlayers(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Age minimum"
               name="gameSuggestedAge"
@@ -144,7 +151,8 @@ function CreateAdvert({
                 setGameSuggestedAge(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="file"
               label="Inserer une image"
               name="advertImage"
@@ -155,7 +163,8 @@ function CreateAdvert({
                 setFile(file);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Ville"
               name="city"
@@ -174,18 +183,20 @@ function CreateAdvert({
                 setDescription(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Auteur"
               name="gameAuthor"
               placeholder="Auteur"
               onChange={(event) => {
                 const { value } = event.target;
-                console.log('auteur', value)
+                console.log('auteur', value);
                 setGameAuthor(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Categories"
               name="categories"
@@ -195,7 +206,8 @@ function CreateAdvert({
                 setCategories(value);
               }}
             />
-            <input className="CreateAdvert__form__title"
+            <input
+              className="CreateAdvert__form__title"
               type="text"
               label="Année de sortie"
               name="gameReleaseYear"
@@ -215,7 +227,7 @@ function CreateAdvert({
 
 CreateAdvert.propTypes = {
   isLogged: PropTypes.bool,
-  //onSubmitFormAdvert: PropTypes.func.isRequired,
+  // onSubmitFormAdvert: PropTypes.func.isRequired,
   loggedMessage: PropTypes.string,
 
 };
