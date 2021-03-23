@@ -1,39 +1,45 @@
 .profil {
   width: 100%;
   display: flex;
-  margin: auto;
+  flex-wrap: wrap;
+  margin: 3.5em auto;
   &__picture {
     width: 40%;
+    margin: auto;
+    min-width: 150px;
     display: flex;
     flex-direction: column;
     &__title{
       width: 100%;
+      min-width: 150px;
       margin: auto;
     }
     &__img {
       width: 70%;
-      margin: auto;
+      margin: 1em auto;
     }
   }
   &__info {
     padding: 1rem;
     width: 50%;
+    min-width: 300px;
     text-align: left;
-    margin: 3rem 0;
+    margin: 3rem auto;
     background-color: rgba(169, 167, 167, 0.2) ;
     backdrop-filter: blur(4px);
     border-radius: 40px;
-    padding: 3em;
     &__h2 {
-      display:flex;
+      display: flex;
       justify-content: left;
       width: 100%;
     }
     &__buttons {
-      display: block;
+      width: 70%;
+      min-width: 160px;
+      max-width: 200px;
       border: 1px solid black;
       padding: 2rem;
-      margin: 3rem;
+      margin: 3rem auto;
       background-color: purple;
       color: white;
       border-radius: 10px;
@@ -43,7 +49,8 @@
     }
 
     &__label {
-      min-width: 300px;
+      width: 100%;
+      min-width: 100px;
       margin-bottom: 1.5em;
     }
     &__bar {
@@ -54,8 +61,11 @@
     }
   }
   &__links {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
+    min-width: 200px;
+    margin: auto;
   }
 }
 

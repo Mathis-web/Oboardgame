@@ -1,6 +1,5 @@
 .CreateAdvert {
-  width: auto;
-  min-height: 100vh;
+  width: 100%;
   height: auto;
   margin: 1em auto;
   max-width: 1000px;
@@ -8,14 +7,11 @@
   padding: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   font-family: 'Acme', sans-serif;
   &__title {
-    // font: 2em bold serif;
     margin: auto;
   }
   &__subtitle {
-    // font: 1em bold serif;
     margin: 1.5em auto 3em;
     font-size: 1.7rem;
   }
@@ -30,8 +26,6 @@
     border-radius: 40px;
     padding: 3em;
     &__title {
-      // border-radius: 5px;
-      // border: .5px solid black;
       outline: none;
       border: none;
       border-bottom: #6C0177 1px solid;
@@ -56,7 +50,6 @@
       color: purple;
     }
     &__button {
-      // font: 1em sans-serif;
       padding: 0.6em 1em;
       margin: 3em auto 0;
       background-color: purple;

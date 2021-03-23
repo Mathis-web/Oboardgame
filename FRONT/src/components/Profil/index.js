@@ -30,19 +30,19 @@ const Profil = () => {
           <span className="profil__info__bar">{user.pseudo}</span>
         </div>
         <div className="profil__info__h2">
-          <span className="profil__info__label">Nom</span>
+          <span className="profil__info__label">Nom :</span>
           <span className="profil__info__bar">{user.lastname}</span>
         </div>
         <div className="profil__info__h2">
-          <span className="profil__info__label">Prenom :</span>
+          <span className="profil__info__label">Prénom :</span>
           <span className="profil__info__bar">{user.firstname}</span>
         </div>
         <div className="profil__info__h2">
-          <span className="profil__info__label">Adresse mail :</span>
+          <span className="profil__info__label">Adresse email :</span>
           <span className="profil__info__bar">{user.email}</span>
         </div>
         <div className="profil__info__h2">
-          <span className="profil__info__label">Numero de telephone :</span>
+          <span className="profil__info__label">Numéro de téléphone :</span>
           <span className="profil__info__bar">{user.phoneNumber}</span>
         </div>
         <div className="profil__info__h2">
