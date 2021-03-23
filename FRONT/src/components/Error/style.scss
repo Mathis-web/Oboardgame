@@ -1,0 +1,16 @@
+.Error {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  &__text {
+    // font: 1em normal serif;
+    margin: 1em auto 1em;
+    width: 50%;
+    font-size: 2em;
+    &__span {
+      color: #f0f;
+    }
+  }
+  
+}

@@ -27,7 +27,9 @@ import UpdateAdvert from 'src/containers/UpdateAdvert';
 import DeleteAdvert from 'src/containers/DeleteAdvert';
 import UpdateProfil from 'src/containers/UpdateProfil';
 import DeleteProfil from 'src/containers/DeleteProfil';
+import Error from 'src/components/Error';
 import UserAdverts from '../UserAdverts';
+
 
 import './styles.scss';
 
@@ -95,6 +97,7 @@ const App = () => {
           <Route path="/user-adverts">
             <UserAdverts />
           </Route>
+          <Error />
         </Switch>
         <Footer />
       </div>
