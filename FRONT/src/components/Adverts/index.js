@@ -9,22 +9,39 @@ import axios from 'axios';
 // == Composant
 const Adverts = () => {
   const [adverts, setAdverts] = useState([]);
+  const [filteredAdverts, setFilteredAdverts] = useState([]);
 
   useEffect(() => {
     axios
       .get('http://34.207.234.22/api/alladverts')
-      .then((res) => setAdverts(res.data));
+      .then((res) => {
+        setAdverts(res.data);
+        setFilteredAdverts(res.data);
+      });
   }, []);
+
+  const inputSearch = (e) => {
+    e.preventDefault();
+    console.log('Valeur search : ', adverts.filter((obj) => obj.advert.title.toLowerCase().includes(e.target.value.toLowerCase())));
+    setFilteredAdverts(adverts.filter((obj) =>
+      obj.advert.title.toLowerCase().includes(e.target.value.toLowerCase())));
+  };
+  console.log('Adverts :', adverts);
 
   return (
     <div className="Adverts">
       <h1 className="Adverts__title">Les annonces</h1>
       <div className="Adverts__home__search">
         <p> Vous savez ce que vous cherchez ?</p>
-        <input className="Adverts__home__search__bar" placeholder="7 Wonders, Monopoly..." type="text" />
+        <input
+          onChange={inputSearch}
+          className="Adverts__home__search__bar"
+          placeholder="7 Wonders, Monopoly..."
+          type="text"
+        />
       </div>
       <div className="Adverts__container">
-        {adverts.map((obj) => (
+        {filteredAdverts.map((obj) => (
           <Link
             to={`adverts/${obj.advert.id}`}
             key={obj.advert.id}
